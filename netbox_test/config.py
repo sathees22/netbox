@@ -1,0 +1,4 @@
+NETBOX_URL = "http://10.1.30.100"
+
+# Provide your API KEY
+NETBOX_TOKEN = "4fbaf8e5272978b3ef7ff12a35b6746e1154f072"
