@@ -16,13 +16,13 @@ manufacturer = "dcim/manufacturers/"
 rack = "dcim/racks/"
 response = requests.get(url + tenent_api, headers=headers, verify=False)
 
-for each_line in response.json()["results"]:
+''' for each_line in response.json()["results"]:
     r_print(each_line)
 
-exit()    
+exit()  '''   
 
 data_payload = {
-    "name" : "SK",
+    "name" : "SK05",
     "device_type": {
         "id" : 2,
     },
@@ -31,6 +31,10 @@ data_payload = {
     },
     "site" : {
         "id" : 3,
+    },
+    
+    "tenant" : {
+        "id" :7,
     },
     "serial" : "test220471"
     

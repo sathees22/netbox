@@ -1,7 +1,7 @@
 import requests
 import json
 
-url = "http://10.1.30.100/api/dcim/devices"
+url = "http://10.1.30.100/api/dcim/devices/"
 
 payload = {}
 headers = {
@@ -10,6 +10,6 @@ headers = {
 }
 
 
-response = requests.request("GET", url, headers=headers, data=payload)
+response = requests.request("GET", url, headers=headers, data=payload, verify=False)
 
 print(response.text)
